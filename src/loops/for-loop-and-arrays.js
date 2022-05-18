@@ -7,9 +7,22 @@ let word = ''
 
 // Use a for loop to set the sum variable to the sum of all the values in nums
 sum = 0
+for(let i=0; i < nums.length; i++) {
+// get the value at the current index for array
+const value = nums[i] // value = the value inside the nums array at index = 1
+// add value to sum
+sum = sum + value // shorthand is sum += value
+}
 
 // Use a for loop to populate doubledNums with every value from nums array doubled (i.e [2, 6, 24, etc...])
 const doubledNums = []
+
+for(let i=0; i < nums.length; i++) {
+  const value = nums[i] 
+  doubledNums.push (value * 2)
+  
+  console.log(doubledNums);
+}
 
 // Use a for loop to set word equal to all the letters in the letters array
 word = ''
