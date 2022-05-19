@@ -21,9 +21,15 @@
 // error, 10    | ERROR!!!!!!!!!!
 //
 // TODO: write code below
+function cautionMssge(string, num) {
+  const messgeOutput = string.toUpperCase()
+  // const exclamation = num.
+  return messgeOutput + num
+}
+console.log(cautionMssge('OH NO', 1));
 
 // change the exported value to be the name of the function you defined
 module.exports = {
   a: undefined, // change undefined to be the name of the function defined to create the range of numbers (the first todo)
-  b: undefined // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
+  b: cautionMssge // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
 }

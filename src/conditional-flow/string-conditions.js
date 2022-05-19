@@ -1,6 +1,12 @@
 // This function should return true if the passed string is equal to "Hello"
-function isHello (val1) {
 
+greeting = 'Hello'
+function isHello (greeting) {
+  if (greeting) {
+    return true
+  } else {
+    return false ('goodbye')
+  }
   // TODO: write code in this function body to pass the tests
 
 }
