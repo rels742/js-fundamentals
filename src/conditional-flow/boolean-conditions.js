@@ -2,14 +2,14 @@
 // "Well done, you passed!" if the value is true, or "Sorry, try again"
 // if the value is false.
 
-let didPass = true;
+
 function getResult (didPass) {
   // TODO: write code in this function body to pass the tests
   if (didPass) {
-    console.log("Well done, you passed!")
+    return "Well done, you passed!"
      
    } else {
-    console.log("Sorry, try again")
+    return "Sorry, try again"
    }
 }
 
