@@ -2,9 +2,14 @@
 // than or equal to lower AND less than or equal to upper.
 // Implement this with a single condition.
 function isInRange (num, lower, upper) {
-
   // TODO: write code in this function body to pass the tests
-
+  if(num <= upper && num >= lower) {
+    return true
+  } else {
+    if (num >= lower || num <= upper) {
+      return false
+    }
+  }
 }
 
 // This function should return true if the passed string is equal
@@ -13,6 +18,11 @@ function isInRange (num, lower, upper) {
 function isHelloOrGoodbye (val1) {
 
   // TODO: write code in this function body to pass the tests
+  if(val1 === "Hello" || val1 === "Goodbye") {
+    return true 
+  } else {
+    return false
+  }
 
 }
 
@@ -31,6 +41,16 @@ function isHelloOrGoodbye (val1) {
 function getAgeDescription (age) {
 
   // TODO: write code in this function body to pass the tests
+  if(age === 0) {
+    return "Baby"
+  } else if (age <= 4) {
+    return "Toddler"
+  } else if (age <= 12) {
+    return "Child"
+  } else if (age <= 19) {
+    return "Teenager"
+  } else age > 19 
+    return "Adult"
 }
 
 module.exports = {
