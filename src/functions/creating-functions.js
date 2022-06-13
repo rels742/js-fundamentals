@@ -10,10 +10,8 @@
 function incrementNumber(num) {
   return num + 1
 }
-incrementNumber(1);
-incrementNumber(2);
-
-
+incrementNumber(1)
+incrementNumber(2)
 
 // Define a function that takes any person's name and returns it with a smiley :)!
 // Remember to make the name capitalized!
@@ -27,11 +25,8 @@ incrementNumber(2);
 // TODO: write code below
 function sayHi(name) {
   const newName = name[0].toUpperCase() + name.slice(1)
-  return "Hi," + " " + newName + " " + ":)"
+  return 'Hi,' + ' ' + newName + ' ' + ':)'
 }
-console.log(sayHi('Edward'));
-console.log(sayHi('Aiyana'));
-
 
 // TODO: change undefined to be the name of the functions you defined
 module.exports = {
