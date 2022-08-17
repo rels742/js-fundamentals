@@ -17,11 +17,10 @@ for (let i = 0; i < nums.length; i++) {
 // Use a for loop to populate doubledNums with every value from nums array doubled (i.e [2, 6, 24, etc...])
 const doubledNums = []
 
-// for(let i=0; i < nums.length; i++) {
-//   const value = nums[i]
-//   doubledNums.push (value * 2)
-
-// }
+for (let i = 0; i < nums.length; i++) {
+  const double = nums[i] * 2
+  doubledNums.push(double)
+}
 
 // Use a for loop to set word equal to all the letters in the letters array
 word = ''
@@ -33,12 +32,20 @@ for (let i = 0; i < letters.length; i++) {
 // Use a for loop to populate everySecondNum with every second number from the nums array
 const everySecondNum = []
 
+for (let i = 0; i < nums.length; i++) {
+  if (i % 2 !== 0) {
+    everySecondNum.push(nums[i])
+  }
+}
+
 // Use a for loop to populate numsReversed with the numbers from nums in reverse order
 const numsReversed = []
 
-for (let i = 0; i < nums.length - 1; i--) {
+for (i = nums.length - 1; i >= 0; i--) {
   numsReversed.push(nums[i])
 }
+
+// console.log(numsReversed)
 
 // do not change below this line
 module.exports = {
