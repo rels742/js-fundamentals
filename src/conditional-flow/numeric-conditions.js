@@ -13,23 +13,18 @@ function isArrayEmpty(array) {
 // This function should return true if num1 is greater than num2, false otherwise
 function isGreaterThan(num1, num2) {
   // TODO: write code in this function body to pass the tests
-  // if(num1 <= num2 ) {
-  //   false
-  // } else if (num1 !== num2) {
-  //   {
-  //     return true
-  //   }
-  // } else {
-  //   !(num1 > num2)
-  //   return false
-  // }
+  if (num1 > num2) {
+    return true
+  } else {
+    return false
+  }
 }
 
 // This function should return the lowest number in the passed array
 function findLowest(nums) {
   // TODO: write code in this function body to pass the tests
+  return Math.min(...nums)
 }
-
 module.exports = {
   a: isArrayEmpty,
   b: isGreaterThan,
